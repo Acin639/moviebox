@@ -4,7 +4,7 @@ export default function Row({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${fetchUrl}?api_key=demo`)
+    fetch(`https://api.themoviedb.org/3/movie/${fetchUrl}?api_key=f43ec82a5f24fe6190891894b7436c7a`)
       .then(r => r.json())
       .then(d => setMovies(d.results || []));
   }, [fetchUrl]);
