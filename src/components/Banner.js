@@ -6,7 +6,7 @@ export default function Banner() {
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=demo`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=f43ec82a5f24fe6190891894b7436c7a`)
       .then(res => res.json())
       .then(data => setSlides(data.results.slice(0, 5)));
   }, []);
